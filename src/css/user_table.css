@@ -1,0 +1,220 @@
+/* Container for the table */
+.user-table-container {
+    padding: 20px;
+    max-width: 1240px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  /* Table styling */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #222121; /* Adding a border to the table */
+  }
+  
+  /* Table header styling */
+  .user-table th {
+    padding: 15px;
+    background-color: rgba(41, 182, 224, 1); /* Updated header color */
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #222121;
+    /* border-bottom: 2px solid rgba(41, 182, 224, 1); Header border */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Table data cell styling */
+  .user-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #242323; /* Added borders to each column and row */
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Table row hover effect */
+  .user-table tr:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  /* Styling for images inside the table */
+  .payment-image {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .payment-image:hover {
+    transform: scale(1.05); /* Image scale on hover */
+  }
+  
+  /* Confirm status green styling */
+  .user-table .confirm-status {
+    color: #4caf50; /* Green color for confirmation */
+    font-weight: bold;
+  }
+  
+  /* Non-confirm status red styling */
+  .user-table .non-confirm-status {
+    color: #f44336; /* Red color for non-confirmation */
+    font-weight: bold;
+  }
+  
+  /* Loading Spinner */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #2e3b4e;
+  }
+  
+  /* Table row border for clarity */
+  .user-table tr {
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  /* Optional: Styling for empty data state */
+  .user-table td[colspan="10"] {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Optional: Button styles for action columns (like editing or deleting) */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .user-table th,
+    .user-table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .payment-image {
+      width: 60px;
+      height: 40px;
+    }
+  }
+  
+
+  /* Modal styles */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 10px;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Modal image */
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* You can adjust this for larger screens */
+    object-fit: contain; /* Ensures the image is properly scaled */
+  }
+  
+  /* Close button styles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    z-index: 10000; /* Make sure it stays on top of the image */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 10px;
+      max-width: 95%;
+    }
+  
+    .modal-image {
+      max-height: 400px; /* Reduce max height for smaller screens */
+    }
+  
+    .close-button {
+      font-size: 18px; /* Slightly smaller close button */
+      top: 5px;
+      right: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 8px;
+      max-width: 90%;
+    }
+  
+    .modal-image {
+      max-height: 300px; /* Further reduce max height on very small screens */
+    }
+  
+    .close-button {
+      font-size: 16px; /* Smaller close button for tiny screens */
+      top: 3px;
+      right: 3px;
+    }
+  }
+  

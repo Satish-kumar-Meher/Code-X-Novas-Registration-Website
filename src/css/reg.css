@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-image: url("../pages/image/backgroung_img.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .registration_form_reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+  /* Banner */
+
+
+  .banner_reg{
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  @media(max-width:1150px){
+    .responsive_svg_reg{
+        width: 900px;
+    }
+  }
+
+
+  @media(max-width:855px){
+    .responsive_svg_reg{
+        width: 600px;
+    }
+  }
+
+
+  @media(max-width:550px){
+    .responsive_svg_reg{
+        width: 400px;
+    }
+  }
+
+
+
+  @media(max-width:395px){
+    .responsive_svg_reg{
+        width: 300px;
+    }
+  }
+
+
+
+
+
+
+
+  /* Exploration */
+
+  .exploration_reg{
+    font-size: 85px;
+    font-family: 'Iceberg', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(#7283C5, #9FAEE9, #999999); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  @media(max-width:1150px){
+    .exploration_reg{
+        font-size: 60px;
+    }
+  }
+
+
+  @media(max-width:855px){
+    .exploration_reg{
+      font-size: 40px;
+    }
+  }
+
+
+  @media(max-width:550px){
+    .exploration_reg{
+      font-size: 27px;
+      margin-top: 5px;
+    }
+  }
+
+  @media(max-width:395px){
+    .exploration_reg{
+      font-size: 23px;
+      margin-top: 5px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Form-Heading */
+
+  .form_head_reg{
+    font-size: 40px;
+    font-family: 'Digital Numbers', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+  }
+
+
+  @media(max-width:1150px){
+    .form_head_reg{
+        font-size: 30px;
+    }
+  }
+
+
+  @media(max-width:855px){
+    .form_head_reg{
+      font-size: 20px;
+    }
+  }
+
+
+  @media(max-width:550px){
+    .form_head_reg{
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media(max-width:395px){
+    .form_head_reg{
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 9px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Registration Form */
+
+  .reg_form_reg{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 2%;
+    padding-bottom: 3.7%;
+    padding-left: 2%;
+  }
+
+  
+
+
+
+  .form_reg{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(234, 238, 246, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 40px 20px 40px 10px;
+    border-radius: 21px;
+    width: 500px;
+    height: 450px;
+  }
+
+
+  .form1_reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    
+  }
+
+  .form_s_reg{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(234, 238, 246, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 40px 20px 40px 20px;
+    border-radius: 21px;
+    width: 410px;
+    height: 640px;
+  }
+
+
+  .form1_s_reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    
+  }
+
+
+  .form-col_reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+
+
+
+  input {
+    height: 37px;
+    font-size: 16px;
+    width: 410px;
+    border: 1px solid rgba(217, 217, 217, 0.3);
+    border-radius: 11px;
+    padding-inline-start: 21px;
+    padding-inline-end: 13px;
+    background-color: rgba(217, 217, 217, 0.3);
+    
+  }
+
+  input::placeholder{
+    color:  rgba(217, 217, 217, 0.7);
+
+  }
+
+
+
+.form-group_reg textarea {
+    width: 200px  ;       
+    height: 300px;     
+    padding: 10px;     
+    font-size: 16px;    
+    resize: vertical;   
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    color: #333;         
+    background-color: #f9f9f9; 
+}
+  
+
+.form-group_reg{
+    padding-inline-start: 21px;
+}
+
+
+.head1_reg{
+    padding-inline-start: 25px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+  
+  
+  
+  
+/* .lower-middle_reg{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 0%;
+      height: 450px ;
+  
+      border: 2px solid black;
+      padding: 40px 20px 40px 10px;
+      border-radius: 21px;
+}
+   */
+
+
+
+
+   @media(max-width:111150px){
+    .form_s_reg{
+      display: none;
+    }
+   }
+
+   @media(max-width:1150px){
+    .form_reg{
+      padding: 40px 20px 40px 10px;
+      border-radius: 21px;
+      width: 400px;
+      height: 450px;
+    }
+
+    input{
+        width: 335px;
+    }
+
+    .reg_form_reg{
+        padding-left: 2%;
+    }
+
+  }
+
+
+  @media(max-width:960px){
+    .reg_form_reg{
+        padding-left: 2%;
+    }
+  }
+
+  
+  @media(max-width:855px){
+    .form_reg{
+      padding: 40px 20px 30px 0px;
+      border-radius: 21px;
+      width: 350px;
+      height: 450px;
+    }
+
+    input{
+      width: 300px;
+      font-size: 13px;
+    }
+
+    .form-group1_reg textarea{
+      font-size: 13px;
+    }
+
+    .head1_reg{
+      font-size: 14px;
+    }
+    
+  }
+
+
+
+  @media(max-width:755px){
+    .form_reg{
+      display: none;
+    }
+
+    .form_s_reg{
+      display: flex;
+    }
+
+    .reg_form_reg{
+      padding-left: 1%;
+    }
+  }
+
+
+  @media(max-width:435px){
+    .form_reg{
+      display: none;
+    }
+
+    .form_s_reg{
+      display: flex;
+      width: 370px;
+      padding: 40px 20px 40px 5px;
+    }
+
+    .reg_form_reg{
+      padding-left: 1%;
+    }
+  }
+
+
+  @media(max-width:395px){
+    .form_reg{
+      display: none;
+    }
+
+    .form_s_reg{
+      display: flex;
+      width: 330px;
+      padding: 30px 20px 40px 5px;
+    }
+
+    .reg_form_reg{
+      padding-left: 1%;
+    }
+
+
+    input {
+      height: 37px;
+      font-size: 13px;
+      width: 270px;
+      padding-inline-start: 21px;
+      padding-inline-end: 13px;
+    }
+  
+    
+  }
+
+
+
+  @media(max-width:345px){
+    .form_reg{
+      display: none;
+    }
+
+    .form_s_reg{
+      display: flex;
+      width: 300px;
+      padding: 30px 20px 40px 5px;
+    }
+
+    .reg_form_reg{
+      padding-left: 1%;
+    }
+
+
+    input {
+      height: 37px;
+      font-size: 13px;
+      width: 250px;
+      padding-inline-start: 21px;
+      padding-inline-end: 13px;
+    }
+  
+    
+  }
+
+
+
+
+
+
+
+   /* Proceed Button */
+
+
+   .btn_reg{
+    border: 2px solid rgba(11, 11, 189, 0.5);
+    border-radius: 11px;
+    padding: 9px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 25px;
+    background-color:  rgba(11, 11, 189, 0.5);
+    margin-bottom: 35px;
+    width: 400px;
+    height: 60px;
+  }
+
+
+  .btn_reg:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+  }
+
+
+
+  @media(max-width:1150px){
+    .btn_reg{
+        width: 300px;
+        height: 55px;
+        font-size: 20px;
+    }
+  }
+
+
+  @media(max-width:755px){
+    .btn_reg{
+      width: 270px;
+      height: 52px;
+      font-size: 18.5px;
+  }
+  }
+
+  @media(max-width:605px){
+    .btn_reg{
+     margin-top: 10px;
+  }
+  }
+  
+
+  @media(max-width:435px){
+    .btn_reg{
+      margin-top: 20px;
+      width: 245px;
+      height: 49px;
+      font-size: 17px;
+  }
+  }
+
+
+  
+  @media(max-width:395px){
+    .btn_reg{
+      margin-top: 20px;
+      width: 230px;
+      height: 47.5px;
+      font-size: 16px;
+  }
+  }
+
+
+  @media(max-width:345px){
+    .btn_reg{
+      margin-top: 20px;
+      width: 215px;
+      height: 45px;
+      font-size: 15.5px;
+  }
+  }
+
+
+  /* Spin animation for the loader */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Loader spinning effect */
+.btn_reg .lucide-loader {
+    animation: spin 1s linear infinite; /* Apply spin animation */
+    margin-right: 10px; /* Optional: adjust if you want spacing between the loader and button text */
+  }

@@ -1,0 +1,226 @@
+/* 
+.main-cont-scan{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_scanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(234, 238, 246, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 20px 20px 40px 10px;
+    border-radius: 21px;
+    width: 1000px;
+    height: 470px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 30px;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+
+/* Main Container Styling */
+.main-cont-scan {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .hidden{
+    display: none;
+  }
+  /* Box Scanner Styling */
+  .box_scanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(234, 238, 246, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 21px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 30px auto;
+    gap: 20px;
+  }
+  
+  /* Scanner Image Styling */
+  .scanner_image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Scanner Content Styling */
+  .scanner_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .scanner_text {
+    font-size: 1.2rem;
+    color: #f8f3f3;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .upload_button {
+    background-color: rgba(41, 182, 224, 1);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload_button:hover {
+    background-color: rgba(31, 142, 174, 1);
+  }
+  
+  .preview_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    width: 250px;
+    position: relative;
+  }
+  
+  .preview_image {
+    width: 200px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .close_button {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 2px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .close_button:hover {
+    background: #ff4c4c;
+  }
+  
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box_scanner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .scanner_image img {
+      max-width: 100%;
+    }
+  
+    .scanner_content {
+      align-items: center;
+    }
+  
+    .scanner_text {
+      font-size: 1rem;
+    }
+  
+    .upload_button {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scanner_text {
+      font-size: 0.9rem;
+    }
+  
+    .upload_button {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .preview_box {
+      width: 100%; /* Takes full width of container on smaller screens */
+      max-width: 250px; /* Reduces max width for smaller devices */
+    }
+  
+    .preview_image {
+      width: 240px;
+      height: 160px; /* Adjust image size for smaller devices */
+    }
+  
+    .close_button {
+      font-size: 14px; /* Smaller button size */
+      padding: 4px; /* Adjust padding for smaller devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .preview_box {
+      flex-direction: column; /* Stack items vertically on very small screens */
+      align-items: center;
+      padding: 10px; /* Add more padding for better touch interaction */
+    }
+  
+    .preview_image {
+      margin-bottom: 8px; /* Add spacing below image */
+    }
+  
+    .close_button {
+      margin-left: 0;
+      font-size: 12px;
+      padding: 15px; /* Further reduce button size for very small screens */
+    }
+  }
+
+  /* Spin animation for the loader */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Loader spinning effect */
+.upload_button .lucide-loader {
+    animation: spin 1s linear infinite; /* Apply spin animation */
+    margin-right: 10px; /* Optional: adjust if you want spacing between the loader and button text */
+  }

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-image: url(/image/backgroung_img.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #lottie-background_confirm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's in the background */
+  }
+
+  .terms_con_confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Exploration */
+
+  .exploration_confirm{
+    font-size: 95px;
+    font-family: 'Iceberg', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(#7283C5, #9FAEE9, #999999); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+  @media(max-width:1150px){
+    .exploration_confirm{
+        font-size: 70px;
+    }
+  }
+
+
+  @media(max-width:855px){
+    .exploration_confirm{
+      font-size: 50px;
+    }
+  }
+
+
+  @media(max-width:550px){
+    .exploration_confirm{
+      font-size: 35px;
+      margin-top: 5px;
+    }
+  }
+
+  @media(max-width:395px){
+    .exploration_confirm{
+      font-size: 28px;
+      margin-top: 5px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* Form-Heading */
+
+  .form_head_confirm{
+    font-size: 55px;
+    font-family: 'Iceberg', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+  }
+
+
+  @media(max-width:1150px){
+    .form_head_confirm{
+        font-size: 45px;
+    }
+  }
+
+
+  @media(max-width:855px){
+    .form_head_confirm{
+      font-size: 28px;
+    }
+  }
+
+
+  @media(max-width:550px){
+    .form_head_confirm{
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media(max-width:395px){
+    .form_head_confirm{
+      font-size: 16.5px;
+      margin-top: 5px;
+      margin-bottom: 9px;
+    }
+  }
+
+
+
+
+
+
+
+ #lottie-background_confirm{
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 15%; 
+  z-index: 0; 
+  pointer-events: none; 
+ }
+
+.lottie_confirm{
+  width: 100%; 
+  height: 100%; 
+}
+
+
+
+
+
+
+.video-container_confirm{
+  position: relative; /* Ensures container can hold positioned content */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.background-video_confirm{
+  position: absolute; /* Allows placement */
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video */
+  min-width: 100%; /* Ensures the video covers the width */
+  min-height: 100%; /* Ensures the video covers the height */
+  z-index: -1; /* Places the video behind other content */
+  object-fit: cover; /* Ensures proper scaling without distortion */
+}
+
+
+
+
+
+  
+.gif-container_confirm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  width: 100%; 
+  height: 100dvh; 
+  overflow: hidden; 
+}
+
+.background-gif_confirm{
+  position: absolute; 
+  bottom: 10%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%; 
+  height: auto; 
+  max-height: 120%; 
+  z-index: -1; 
+}
+
+@media (max-width: 855px) {
+  .background-gif_confirm{
+      bottom: 10%; 
+      max-height: 120%; 
+  }
+}
+
+@media (max-width: 670px){
+  .gif-container_confirm{
+    gap: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-gif_confirm{
+      max-height: 200%; 
+  }
+}
+
