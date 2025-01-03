@@ -60,20 +60,20 @@ export const Payment = () => {
           </div>
           <div className="points1_pay">
             <div className="price1_pay">
-              <p>${originalPrice}</p>
+              <p>₹{originalPrice}</p>
             </div>
             <div className="price1_pay">
-              <p>{discountApplied ? `-$${discountAmount}` : "No Discount"}</p>
+              <p>{discountApplied ? `-₹${discountAmount}` : "No Discount"}</p>
             </div>
             <div className="price1_pay">
-              <p>${payableAmount}</p>
+              <p>₹{payableAmount}</p>
             </div>
           </div>
         </div>
 
         <div className="click_pay">
           <button className="btn_pay" onClick={() => navigate("/scannerpage", { state: { amount: payableAmount } })}
-  >PAY {payableAmount}</button>
+  >PAY ₹{payableAmount}</button>
         </div>
       </div>
     </section>
